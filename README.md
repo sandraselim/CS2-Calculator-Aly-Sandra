@@ -1,0 +1,1 @@
+#This calculator library provides a set of mathematical functions for arithmetic operations, calculations, and random number generation. We are designing it to be simple, easy to use and integrate in C++ code/projects.
