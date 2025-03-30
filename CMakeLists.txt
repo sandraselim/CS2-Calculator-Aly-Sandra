@@ -8,4 +8,8 @@ set(SOURCE_FILES
     test.cpp	   
 )
 
-add_executable(trial  ${SOURCE_FILES})     
+add_executable(trial  ${SOURCE_FILES})  
+
+target_include_directories(trial   PUBLIC    RandomLib)
+
+target_link_libraries(trial    -LRandomLib    -lRandGen) 
