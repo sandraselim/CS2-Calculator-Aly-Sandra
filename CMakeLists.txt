@@ -1,15 +1,10 @@
 cmake_minimum_required(VERSION 3.10)    
 
-project(CS2-Calculator-AlyandSandra)
+project(CS2-Calculator-AlyandSandra VERSION 1.0)
 
-set(SOURCE_FILES  
-    calculator.h
-    calculator.cpp
-    test.cpp	   
-)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(trial  ${SOURCE_FILES})  
+add_executable(myCalculator main.cpp calculator.cpp)
 
-target_include_directories(trial   PUBLIC    RandomLib)
 
-target_link_libraries(trial    -LRandomLib    -lRandGen) 
