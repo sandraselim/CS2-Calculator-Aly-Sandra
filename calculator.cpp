@@ -1,4 +1,6 @@
 #include "calculator.h"
+#include <cstdlib>
+#include <ctime>
 #include <iostream>
 using namespace std;
 
@@ -59,4 +61,18 @@ double factorial(double n) {
     }
 
     return result; // Return the final factorial value
+}
+
+
+int main() {
+    srand(time(0)); // Seed the random number generator with the current time
+
+    int lower = 10; // Lower bound of the range
+    int upper = 50; // Upper bound of the range
+
+    // Generate a random number in the range [lower, upper]
+    int randomNum = rand() % (upper - lower + 1) + lower;
+
+    std::cout << "Random number between " << lower << " and " << upper << ": " << randomNum << std::endl;
+    return 0;
 }
