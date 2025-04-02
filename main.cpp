@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     cout << "testing add function. Enter 2 numbers" << endl;
-    int x,y;
+    double x,y;
     cin >> x >> y;
     cout << x <<"+"<<y << "=" << add(x,y) <<endl;
 
