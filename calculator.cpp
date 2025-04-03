@@ -34,20 +34,11 @@ int gcd(int a, int b) {
 }
 
 
-double lcm(double a, double b) {
-    double maxVal;
-if (a > b) {
-    maxVal = a;
-} else {
-    maxVal = b;
-} 
-    double lcm = maxVal;
-   
-    if (fmod(lcm, a) == 0 && fmod(lcm, b) == 0) { // Check divisibility
-        return lcm; // Found the LCM
-    }
-    lcm += maxVal; // Increment by maxVal
-    }
+
+int lcm(int a, int b) 
+{
+    
+    return (a * b) / gcd(a, b);
 }
 
 
