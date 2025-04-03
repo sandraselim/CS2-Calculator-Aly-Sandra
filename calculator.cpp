@@ -23,7 +23,7 @@ double divide(double a, double b) {
     }
     return a/b;
 }
-// Function to calculate GCD using the Euclidean algorithm
+
 int gcd(int a, int b) {
     while (b != 0) {
         int temp = b;
@@ -33,17 +33,16 @@ int gcd(int a, int b) {
     return a;
 }
 
-// Function to calculate LCM for double values
+
 double lcm(double a, double b) {
     double maxVal;
 if (a > b) {
     maxVal = a;
 } else {
     maxVal = b;
-} // Start with the larger number
+} 
     double lcm = maxVal;
-   // Increment until we find a number divisible by both a and b
-   while (true) {
+   
     if (fmod(lcm, a) == 0 && fmod(lcm, b) == 0) { // Check divisibility
         return lcm; // Found the LCM
     }
@@ -51,11 +50,11 @@ if (a > b) {
     }
 }
 
-// Function to calculate the factorial of a number
+
 double factorial(double n) {
     double result = 1; // Start with 1 as the base case
 
-    // Multiply numbers from 1 to n
+    
     for (double i = 1; i <= n; i++) {
         result *= i;
     }
@@ -64,15 +63,8 @@ double factorial(double n) {
 }
 
 
-int main() {
-    srand(time(0)); // Seed the random number generator with the current time
-
-    int lower = 10; // Lower bound of the range
-    int upper = 50; // Upper bound of the range
-
-    // Generate a random number in the range [lower, upper]
-    int randomNum = rand() % (upper - lower + 1) + lower;
-
-    std::cout << "Random number between " << lower << " and " << upper << ": " << randomNum << std::endl;
-    return 0;
+int randomnumber(int lower, int upper) 
+{
+    srand(time(0));
+    return rand() % (upper - lower + 1) + lower;
 }
