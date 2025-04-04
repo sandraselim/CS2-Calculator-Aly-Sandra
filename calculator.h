@@ -9,9 +9,9 @@ double add(double a, double b);
 double subtract(double a, double b);
 double multiply(double a, double b);
 double divide(double a, double b);
-int lcm(double a, double b);
+int lcm(int a, int b);
 double factorial(double n);
-int gcd(double a, double b);
+int gcd(int a, int b);
 int randomnumber(int a, int b); 
 
 #endif

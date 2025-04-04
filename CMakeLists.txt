@@ -5,6 +5,11 @@ project(CS2-Calculator-AlyandSandra VERSION 1.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(myCalculator main.cpp calculator.cpp)
+
+set(SOURCE_FILES                       
+    main.cpp
+    calculator.cpp
+)
 
 
+add_executable(CS2-Calculator-AlyandSandra ${SOURCE_FILES})
