@@ -1,0 +1,3 @@
+C:/Users/Sandra Fady/Downloads/CalculatorProject/CS2-Calculator-Aly-Sandra/build/CMakeFiles/CS2-Calculator-AlyandSandra.dir
+C:/Users/Sandra Fady/Downloads/CalculatorProject/CS2-Calculator-Aly-Sandra/build/CMakeFiles/edit_cache.dir
+C:/Users/Sandra Fady/Downloads/CalculatorProject/CS2-Calculator-Aly-Sandra/build/CMakeFiles/rebuild_cache.dir

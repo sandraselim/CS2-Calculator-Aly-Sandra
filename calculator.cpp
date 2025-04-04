@@ -1,6 +1,5 @@
 #include "calculator.h"
 #include <cstdlib>
-#include <ctime>
 #include <iostream>
 using namespace std;
 
@@ -30,14 +29,14 @@ int gcd(int a, int b) {
         b = a % b;
         a = temp;
     }
-    return a;
+
+    return a;
 }
 
 
 
 int lcm(int a, int b) 
 {
-    
     return (a * b) / gcd(a, b);
 }
 
@@ -45,8 +44,7 @@ int lcm(int a, int b)
 double factorial(double n) {
     double result = 1; // Start with 1 as the base case
 
-    
-    for (double i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++) {
         result *= i;
     }
 
@@ -56,6 +54,5 @@ double factorial(double n) {
 
 int randomnumber(int lower, int upper) 
 {
-    srand(time(0));
     return rand() % (upper - lower + 1) + lower;
 }

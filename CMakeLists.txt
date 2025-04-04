@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 
 set(SOURCE_FILES                       
+    main.cpp
     calculator.cpp
-   main.cpp	   
 )
 
 
-add_executable(myCalculator ${SOURCE_FILES})
+add_executable(CS2-Calculator-AlyandSandra ${SOURCE_FILES})

@@ -7,7 +7,7 @@ using namespace std;
 
 int main() 
 {
-   
+    srand(time(0));
     double a = 10.5, b = 5.2;
     cout << "Addition of " << a << " and " << b << ": " << add(a, b) << endl;
 
